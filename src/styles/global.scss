@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Walsheim";
+	src: url("./fonts/GTWalsheimPro-Regular.woff") format("woff");
+	src: url("./fonts/GTWalsheimPro-Regular.eot") format("eot");
+	src: url("./fonts/GTWalsheimPro-Regular.ttf") format("ttf");
+	src: url("./fonts/GTWalsheimPro-Regular.woff2") format("woff2");
+}
+@font-face {
+	font-family: "WalsheimBold";
+	src: url("./fonts/GTWalsheimPro-Bold.woff") format("woff");
+	src: url("./fonts/GTWalsheimPro-Bold.eot") format("eot");
+	src: url("./fonts/GTWalsheimPro-Bold.ttf") format("ttf");
+	src: url("./fonts/GTWalsheimPro-Bold.woff2") format("woff2");
+}
+body {
+	font-family: "Walsheim";
+}
+
+.gradient {
+	background: linear-gradient(
+		360deg,
+		#191565 -0.07%,
+		rgba(25, 21, 101, 0) 112.27%
+	);
+}
+
+.img-home {
+	background-image: url("../images/home/img_hero.svg");
+	background-position-y: -3rem;
+	@media (max-width: 1024px) {
+		background-image: url("../images/home/img_heroTab.svg");
+		background-position-y: 0rem;
+	}
+	@media (max-width: 640px) {
+		background-image: url("../images/home/img_heroMob.svg");
+		background-position-y: 0rem;
+	}
+}
+
+.confetti-home {
+	background-image: url("../images/home/confetti.svg");
+	@media (max-width: 1024px) {
+		background-image: url("../images/home/confettiTab.svg");
+	}
+	@media (max-width: 640px) {
+		background-image: url("../images/home/confettiMob.svg");
+	}
+}
+
+.confetti1 {
+	background-image: url("../images/home/confetti_01.svg");
+	@media (max-width: 1024px) {
+		background-image: none;
+		display: none;
+	}
+}
+
+.confetti2 {
+	background-image: url("../images/home/confetti_02.svg");
+	@media (max-width: 1024px) {
+		background-image: none;
+		display: none;
+	}
+}
+
+.confetti3 {
+	background-image: url("../images/home/confetti_03.svg");
+	@media (max-width: 1024px) {
+		background-image: none;
+		display: none;
+	}
+}
+
+.confetti4 {
+	background-image: url("../images/home/confetti_04.svg");
+	@media (max-width: 1024px) {
+		background-image: none;
+		display: none;
+	}
+}
+
+.confetti5 {
+	background-image: url("../images/home/confetti_05.svg");
+	@media (max-width: 1024px) {
+		background-image: none;
+		display: none;
+	}
+}

@@ -32,14 +32,14 @@ const IndexPage = () => {
 	// 	setActiveIndex(value);
 	// }, 500);
 
-	// const debounceHandleScroll = debounce(() => {
-	// 	onScroll();
-	// }, 100);
+	const debounceHandleScroll = debounce(() => {
+		onScroll();
+	}, 50);
 
-	const debounceHandleScrollTo = debounce(
-		(index: number) => parallax.current.scrollTo(index),
-		500
-	);
+	const debounceHandleScrollTo = debounce((index: number) => {
+		const percent = parallax.current.current / parallax.current.space;
+		if (percent >= 0.75 && percent <= 5.25) parallax.current.scrollTo(index);
+	}, 500);
 
 	const handleClickNav = (index: number) => parallax.current.scrollTo(index);
 
@@ -49,7 +49,7 @@ const IndexPage = () => {
 		if (page < 1) setActiveIndex(1);
 		else if (page >= 1 && page <= 5) setActiveIndex(Math.round(page));
 		else setActiveIndex(5);
-		if (percent >= 0.75 && percent <= 5.25) debounceHandleScrollTo(page);
+		debounceHandleScrollTo(page);
 	};
 
 	useEffect(() => {
@@ -66,6 +66,7 @@ const IndexPage = () => {
 				style={{
 					backgroundSize: "cover",
 					backgroundPositionX: "left",
+					zIndex: 0,
 				}}
 				className="img-home"
 			>
@@ -237,7 +238,7 @@ const IndexPage = () => {
 				</div>
 			</ParallaxLayer>
 			<ParallaxLayer offset={7} speed={0} factor={0.5}>
-				<div className="flex justify-end h-full">
+				<div className="sm:flex sm:justify-end">
 					<Footer />
 				</div>
 			</ParallaxLayer>

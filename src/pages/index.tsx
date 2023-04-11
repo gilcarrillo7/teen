@@ -32,9 +32,9 @@ const IndexPage = () => {
 	// 	setActiveIndex(value);
 	// }, 500);
 
-	const debounceHandleScroll = debounce(() => {
-		onScroll();
-	}, 50);
+	// const debounceHandleScroll = debounce(() => {
+	// 	onScroll();
+	// }, 50);
 
 	const debounceHandleScrollTo = debounce((index: number) => {
 		const percent = parallax.current.current / parallax.current.space;
@@ -71,9 +71,11 @@ const IndexPage = () => {
 				className="img-home"
 			>
 				<Header />
-				<h1 className="font-walsheimpro w-full text-4xl sm:text-5xl lg:text-6xl text-white text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-					With a passion for <span className="text-yellow">opportunities</span>
-					<br className="hidden md:block" /> we recruit for you..
+				<h1 className="font-walsheimpro w-full md:w-2/3 text-4xl sm:text-5xl lg:text-6xl text-white text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+					Talented candidates selected with our AI that{" "}
+					<span className="text-yellow">learns from your Likes (L).</span>
+					<br />
+					<br className="hidden md:block" /> We recruit for you..
 				</h1>
 			</ParallaxLayer>
 			{/** Confetti Desktop */}
@@ -113,10 +115,9 @@ const IndexPage = () => {
 					mobileActiveIndex={1}
 					mobileOnClick={handleClickNav}
 					variant="left"
-					bottomText="Lorem ipsum dolor sit amet consectetur. Consectetur sed faucibus senectus amet. Metus lacus scelerisque purus phasellus senectus elit molestie."
+					bottomText="First of all we need to know your needs and requirements. from the skills and technologies you need, to the profile, location and salary you want to offer."
 				>
-					Lorem ipsum dolor sit amet{" "}
-					<span className="text-blue1">consectetur.</span>
+					Let's start with <span className="text-blue1">the essentials.</span>
 				</HeroContainer>
 			</ParallaxLayer>
 			{/** Confetti 01 */}
@@ -138,10 +139,10 @@ const IndexPage = () => {
 					mobileActiveIndex={2}
 					mobileOnClick={handleClickNav}
 					variant="right"
-					bottomText="Lorem ipsum dolor sit amet consectetur. Consectetur sed faucibus senectus amet. Metus lacus scelerisque purus phasellus senectus elit molestie."
+					bottomText="Our advanced artificial intelligence and human expertise will select from our registered database those profiles that match your detailed requirements."
 				>
-					Lorem ipsum dolor sit amet{" "}
-					<span className="text-yellow">consectetur.</span>
+					We've created a Smart Database with{" "}
+					<span className="text-yellow">hundreds of candidates for you.</span>
 				</HeroContainer>
 			</ParallaxLayer>
 			{/** Confetti 02 */}
@@ -163,10 +164,10 @@ const IndexPage = () => {
 					mobileActiveIndex={3}
 					mobileOnClick={handleClickNav}
 					variant="left"
-					bottomText="Lorem ipsum dolor sit amet consectetur. Consectetur sed faucibus senectus amet. Metus lacus scelerisque purus phasellus senectus elit molestie."
+					bottomText="Get a constant stream of candidate profiles tailored to your specific needs. Our smart learning algorithm has improved the profile drop every day to get the fit you want."
 				>
-					Lorem ipsum dolor sit amet{" "}
-					<span className="text-blue1">consectetur.</span>
+					We are Lean, We learn with{" "}
+					<span className="text-blue1">your Likes.</span>
 				</HeroContainer>
 			</ParallaxLayer>
 			{/** Confetti 03 */}
@@ -188,10 +189,10 @@ const IndexPage = () => {
 					mobileActiveIndex={4}
 					mobileOnClick={handleClickNav}
 					variant="right"
-					bottomText="Lorem ipsum dolor sit amet consectetur. Consectetur sed faucibus senectus amet. Metus lacus scelerisque purus phasellus senectus elit molestie."
+					bottomText="Do not hesitate to contact so many profiles however you want, interview and hire them how you look better."
 				>
-					Lorem ipsum dolor sit amet{" "}
-					<span className="text-yellow">consectetur.</span>
+					The table is laid, all ready to{" "}
+					<span className="text-yellow">interview and hire.</span>
 				</HeroContainer>
 			</ParallaxLayer>
 			{/** Confetti 04 */}
@@ -213,10 +214,10 @@ const IndexPage = () => {
 					mobileActiveIndex={5}
 					mobileOnClick={handleClickNav}
 					variant="left"
-					bottomText="Lorem ipsum dolor sit amet consectetur. Consectetur sed faucibus senectus amet. Metus lacus scelerisque purus phasellus senectus elit molestie."
+					bottomText="And also, we constantly monitor their performance and our recruiting team will always be there to support you ;)"
 				>
-					Lorem ipsum dolor sit amet{" "}
-					<span className="text-blue1">consectetur.</span>
+					Et Viola, you can start working{" "}
+					<span className="text-blue1">with your match!.</span>
 				</HeroContainer>
 			</ParallaxLayer>
 			{/** Confetti 05 */}

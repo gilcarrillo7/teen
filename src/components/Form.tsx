@@ -5,7 +5,9 @@ import Select from "./shared/Select";
 const Form = () => {
 	return (
 		<div className="bg-white mx-auto w-full lg:w-[800px] shadow-xl text-center p-4 sm:p-12 ">
-			<p className="font-walsheimpro text-2xl sm:text-4xl mb-8">Let's start!</p>
+			<p className="font-walsheimpro text-2xl sm:text-4xl mb-8">
+				Let's Schedule a call and work together
+			</p>
 			<form className="w-full">
 				<Input placeholder="Full name" />
 				<div className="flex flex-col sm:flex-row sm:gap-6">

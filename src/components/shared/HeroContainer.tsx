@@ -38,7 +38,7 @@ const HeroContainer = ({
 					<div
 						className={`${variant === "left" ? "text-left" : "lg:text-right"}`}
 					>
-						<p className={`font-walsheimpro mb-2 text-2xl sm:text-3xl lg:text-5xl`}>
+						<p className={`font-walsheimpro mb-2 text-2xl sm:text-3xl lg:text-4xl`}>
 							{children}
 						</p>
 						<p className="text-base sm:text-lg lg:text-xl">{bottomText}</p>

@@ -4,7 +4,7 @@ import Input from "./shared/Input";
 import Select from "./shared/Select";
 const Form = () => {
 	return (
-		<div className="bg-white mx-auto w-full lg:w-[800px] shadow-xl text-center p-4 sm:p-12 ">
+		<div className="bg-white mx-auto w-full lg:w-[800px] shadow-xl text-center p-4 sm:p-12 rounded-2xl">
 			<p className="font-walsheimpro text-2xl sm:text-4xl mb-8">
 				Let's Schedule a call and work together
 			</p>

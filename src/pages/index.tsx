@@ -1,5 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
+import Typewriter from "typewriter-effect";
+import { useAdaptiveTriggers } from "../hooks/useAdaptiveTriggers";
+import { ParallaxConfig, Pages } from "../config/ParallaxConfig";
 
 import ItemNavSlider from "../components/shared/ItemNavSlider";
 import HeroContainer from "../components/shared/HeroContainer";
@@ -7,6 +10,7 @@ import Form from "../components/Form";
 import Footer from "../components/shared/Footer";
 import Header from "../components/shared/Header";
 
+import ImgMain from "../images/home/teen_main.svg";
 import Img1 from "../images/home/img_01.svg";
 import Img2 from "../images/home/img_02.svg";
 import Img3 from "../images/home/img_03.svg";
@@ -14,6 +18,7 @@ import Img4 from "../images/home/img_04.svg";
 import Img5 from "../images/home/img_05.svg";
 
 const IndexPage = () => {
+	const width = useAdaptiveTriggers({});
 	const parallax = useRef<IParallax>(null!);
 
 	const [activeIndex, setActiveIndex] = useState<number>(1);
@@ -71,12 +76,31 @@ const IndexPage = () => {
 				className="img-home"
 			>
 				<Header />
-				<h1 className="font-walsheimpro w-full md:w-2/3 text-4xl sm:text-5xl lg:text-6xl text-white text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-					Talented candidates selected with our AI that{" "}
-					<span className="text-yellow">learns from your Likes (L).</span>
-					<br />
-					<br className="hidden md:block" /> We recruit for you..
-				</h1>
+				<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full sm:w-2/3 lg:w-1/2 flex flex-col items-center">
+					<img src={ImgMain} alt="Teen" className="w-2/3" />
+					<div className="font-walsheimpro w-full text-2xl sm:text-3xl lg:text-4xl text-white text-center ">
+						Talented candidates selected with our AI that{" "}
+						<span className="text-yellow">learns from your Likes.</span>
+						<br />
+						<div className="flex flex-col mt-4 justify-center">
+							<span className="mr-2">We recruit for you</span>
+							<div className="text-yellow">
+								<Typewriter
+									options={{
+										strings: [
+											"Full Stack Developer.",
+											"Sales Manager.",
+											"Operation Analyst.",
+											"DevOps Engineer.",
+										],
+										autoStart: true,
+										loop: true,
+									}}
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
 			</ParallaxLayer>
 			{/** Confetti Desktop */}
 			<ParallaxLayer
@@ -109,7 +133,11 @@ const IndexPage = () => {
 					</div>
 				</div>
 			</ParallaxLayer>
-			<ParallaxLayer offset={1} speed={0} factor={1}>
+			<ParallaxLayer
+				offset={ParallaxConfig[width][Pages.firstPage].offset}
+				speed={ParallaxConfig[width][Pages.firstPage].speed}
+				factor={1}
+			>
 				<HeroContainer
 					img={Img1}
 					mobileActiveIndex={1}
@@ -133,7 +161,11 @@ const IndexPage = () => {
 				className="confetti1"
 			></ParallaxLayer>
 
-			<ParallaxLayer offset={2} speed={0} factor={1}>
+			<ParallaxLayer
+				offset={ParallaxConfig[width][Pages.secondPage].offset}
+				speed={ParallaxConfig[width][Pages.secondPage].speed}
+				factor={1}
+			>
 				<HeroContainer
 					img={Img2}
 					mobileActiveIndex={2}
@@ -158,7 +190,11 @@ const IndexPage = () => {
 				className="confetti2"
 			></ParallaxLayer>
 
-			<ParallaxLayer offset={3} speed={0} factor={1}>
+			<ParallaxLayer
+				offset={ParallaxConfig[width][Pages.thirdPage].offset}
+				speed={ParallaxConfig[width][Pages.thirdPage].speed}
+				factor={1}
+			>
 				<HeroContainer
 					img={Img3}
 					mobileActiveIndex={3}
@@ -183,7 +219,11 @@ const IndexPage = () => {
 				className="confetti3"
 			></ParallaxLayer>
 
-			<ParallaxLayer offset={4} speed={0} factor={1}>
+			<ParallaxLayer
+				offset={ParallaxConfig[width][Pages.fourthPage].offset}
+				speed={ParallaxConfig[width][Pages.fourthPage].speed}
+				factor={1}
+			>
 				<HeroContainer
 					img={Img4}
 					mobileActiveIndex={4}
@@ -208,7 +248,11 @@ const IndexPage = () => {
 				className="confetti4"
 			></ParallaxLayer>
 
-			<ParallaxLayer offset={5} speed={0} factor={1}>
+			<ParallaxLayer
+				offset={ParallaxConfig[width][Pages.fifthPage].offset}
+				speed={ParallaxConfig[width][Pages.fifthPage].speed}
+				factor={1}
+			>
 				<HeroContainer
 					img={Img5}
 					mobileActiveIndex={5}
@@ -238,7 +282,7 @@ const IndexPage = () => {
 					<Form />
 				</div>
 			</ParallaxLayer>
-			<ParallaxLayer offset={7} speed={0} factor={0.5}>
+			<ParallaxLayer offset={7.1} speed={0} factor={0.2}>
 				<div className="sm:flex sm:justify-end">
 					<Footer />
 				</div>

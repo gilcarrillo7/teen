@@ -10,12 +10,9 @@ const Footer = () => {
 					<div className="flex flex-col sm:flex-row">
 						<div className="sm:order-2 sm:w-1/2 py-4 sm:py-8 sm:pl-4 ">
 							<img src={Logo} alt="Logo" className="mb-2" />
-							<p className="">
-								The job of your dreams
-								<br /> is waiting for you.
-							</p>
+							<p className="">The job of your dreams is waiting for you.</p>
 						</div>
-						<div className="sm:order-1 sm:w-1/2 flex flex-col sm:border-r border-t sm:border-t-0 border-gray3 py-2 sm:py-8">
+						{/* <div className="sm:order-1 sm:w-1/2 flex flex-col sm:border-r border-t sm:border-t-0 border-gray3 py-2 sm:py-8">
 							<a href="#" className="text-gray4 mb-4">
 								Community
 							</a>
@@ -23,7 +20,7 @@ const Footer = () => {
 							<a href="#">Discord</a>
 							<a href="#">Instagram</a>
 							<a href="#">Facebook</a>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

@@ -69,7 +69,7 @@ const IndexPage = () => {
 				className="img-home"
 			>
 				<Header />
-				<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-30px)] sm:w-4/5 md:w-3/5 lg:w-3/5 xl:w-1/2 flex flex-col items-center">
+				<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-30px)] sm:w-4/5 md:w-3/5 lg:w-3/5 flex flex-col items-center">
 					<img
 						src={ImgMain}
 						alt="Teen"

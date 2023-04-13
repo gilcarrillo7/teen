@@ -86,7 +86,7 @@ const IndexPage = () => {
 										strings: [
 											"Full Stack Developer",
 											"Sales Manager",
-											"Operation Analyst",
+											"Operations Analyst",
 											"DevOps Engineer",
 										],
 										autoStart: true,

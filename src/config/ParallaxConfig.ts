@@ -1,6 +1,7 @@
 import { Adaptive } from "../hooks/useAdaptiveTriggers";
 
 export enum Pages {
+	home = "home",
 	firstPage = "firstPage",
 	secondPage = "secondPage",
 	thirdPage = "thirdPage",
@@ -15,6 +16,10 @@ export interface PageConfig {
 
 export const ParallaxConfig: Record<Adaptive, Record<Pages, PageConfig>> = {
 	[Adaptive.sm]: {
+		[Pages.home]: {
+			offset: 1,
+			speed: 0.25,
+		},
 		[Pages.firstPage]: {
 			offset: 1,
 			speed: 0,
@@ -37,6 +42,10 @@ export const ParallaxConfig: Record<Adaptive, Record<Pages, PageConfig>> = {
 		},
 	},
 	[Adaptive.md]: {
+		[Pages.home]: {
+			offset: 1.1,
+			speed: 0.1,
+		},
 		[Pages.firstPage]: {
 			offset: 1,
 			speed: 0,

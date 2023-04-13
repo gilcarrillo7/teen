@@ -16,7 +16,7 @@ const Form = () => {
 	return (
 		<div className="bg-white mx-auto w-full lg:w-[800px] shadow-xl text-center p-4 sm:p-12 rounded-2xl">
 			<p className="font-walsheimpro text-2xl sm:text-4xl mb-8">
-				Let's Schedule a call and work together
+				Let's schedule a call and work together
 			</p>
 			<form className="w-full" onSubmit={(e) => handleSubmit(e)}>
 				<Input placeholder="Full name" />

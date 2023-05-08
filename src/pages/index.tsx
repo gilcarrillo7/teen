@@ -3,7 +3,6 @@ import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Typewriter from "typewriter-effect";
 import { useAdaptiveTriggers } from "../hooks/useAdaptiveTriggers";
 import { ParallaxConfig, Pages } from "../config/ParallaxConfig";
-import Helmet from "react-helmet";
 
 import ItemNavSlider from "../components/shared/ItemNavSlider";
 import HeroContainer from "../components/shared/HeroContainer";
@@ -17,6 +16,7 @@ import Img2 from "../images/home/img_02.svg";
 import Img3 from "../images/home/img_03.svg";
 import Img4 from "../images/home/img_04.svg";
 import Img5 from "../images/home/img_05.svg";
+import { SEO } from "../components/shared/SEO";
 
 const IndexPage = () => {
 	const width = useAdaptiveTriggers({});
@@ -139,7 +139,7 @@ const IndexPage = () => {
 					mobileActiveIndex={1}
 					mobileOnClick={handleClickNav}
 					variant="left"
-					bottomText="First of all we need to know your needs and requirements. from the skills and technologies you need, to the profile, location and salary you want to offer."
+					bottomText="First of all we need to know your needs and requirements from the skills and technologies you need, to the profile, location and salary you want to offer."
 				>
 					Let's start with <span className="text-blue1">the essentials.</span>
 				</HeroContainer>
@@ -256,7 +256,7 @@ const IndexPage = () => {
 					variant="left"
 					bottomText="And also, we constantly monitor their performance and our recruiting team will always be there to support you ;)"
 				>
-					Et Viola, you can start working{" "}
+					Et Voilà, you can start working{" "}
 					<span className="text-blue1">with your match!</span>
 				</HeroContainer>
 			</ParallaxLayer>
@@ -289,4 +289,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Teen - Home</title>;
+export const Head = () => <SEO title="Teen" />;

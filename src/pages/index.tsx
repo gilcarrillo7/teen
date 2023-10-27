@@ -76,10 +76,10 @@ const IndexPage = () => {
 						className="w-2/3 max-w-[224px] sm:max-w-[343px]"
 					/>
 					<div className="font-walsheimpro w-full text-xl sm:text-3xl text-white text-center ">
-						Use the power of your likes to select talented candidates
+						Use the power of your likes to boost your profiles screening
 						<br />
 						<div className="flex flex-col mt-6 justify-center">
-							<span className="mr-2">We recruit for you</span>
+							<span className="mr-2">Get the best sourcing for</span>
 							<div className="text-yellow">
 								<Typewriter
 									options={{

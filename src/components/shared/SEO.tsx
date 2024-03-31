@@ -9,7 +9,7 @@ interface IProps {
 
 export const SEO = ({
 	title = "Teen Hire",
-	description = "Use the power of your likes to select talented candidates. ",
+	description = "Use the power of your likes to boost your profiles screening. ",
 	image = "",
 	url = "",
 }: IProps) => {

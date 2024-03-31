@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import Button from "./shared/Button";
 import Input from "./shared/Input";
-import Select from "./shared/Select";
 import { BeatLoader } from "react-spinners";
 
 import sendEmail from "../functions/sendEmail";

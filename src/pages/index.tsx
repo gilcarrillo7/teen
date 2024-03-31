@@ -6,7 +6,6 @@ import { ParallaxConfig, Pages } from "../config/ParallaxConfig";
 
 import ItemNavSlider from "../components/shared/ItemNavSlider";
 import HeroContainer from "../components/shared/HeroContainer";
-import Form from "../components/Form";
 import Footer from "../components/shared/Footer";
 import Header from "../components/shared/Header";
 
@@ -56,7 +55,7 @@ const IndexPage = () => {
 	}, [parallax]);
 
 	return (
-		<Parallax ref={parallax} pages={7.5}>
+		<Parallax ref={parallax} pages={6.5}>
 			<ParallaxLayer
 				offset={0}
 				speed={ParallaxConfig[width][Pages.home].speed}
@@ -273,12 +272,14 @@ const IndexPage = () => {
 				className="confetti5"
 			></ParallaxLayer>
 
+			{/**
 			<ParallaxLayer offset={6} speed={0} factor={1}>
 				<div className="w-screen min-h-screen flex justify-between items-center bg-gray2">
 					<Form />
 				</div>
 			</ParallaxLayer>
-			<ParallaxLayer offset={7.1} speed={0} factor={0.2}>
+			 */}
+			<ParallaxLayer offset={6.1} speed={0} factor={0.2}>
 				<div className="sm:flex sm:justify-end">
 					<Footer />
 				</div>

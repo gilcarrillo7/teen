@@ -21,7 +21,7 @@ const Button = ({
       className={`w-full sm:w-auto rounded-full ${
         size === "sm"
           ? "py-1 sm:py-2 px-[8px] sm:px-[15px] text-base"
-          : "py-4 sm:py-[24px] px-[40px] text-xl"
+          : "py-3 sm:py-3 px-[32px] text-lg sm:text-xl"
       } ${variant === "dark" ? "bg-blue2 hover:bg-blue1 text-white" : ""} ${
         variant === "light" ? "bg-blue1 hover:bg-yellow text-white" : ""
       } ${

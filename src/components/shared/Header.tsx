@@ -10,16 +10,22 @@ const Header = () => {
           <Logo />
           <div className="flex gap-2 sm:gap-4">
             <Button
-              text="Book a Demo"
+              text="Book a demo"
               type="button"
               variant="yellow"
               className="min-w-[125px]"
+              onClick={() =>
+                window.open("https://calendly.com/teen-clara/30min")
+              }
             />
             <Button
               text="Login"
               type="button"
               variant="dark"
               className="min-w-[75px]"
+              onClick={() =>
+                (window.location.href = "https://app.teenhire.co/login")
+              }
             />
           </div>
         </div>

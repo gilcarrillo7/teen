@@ -6,12 +6,14 @@ const Button = ({
   size = "sm",
   variant = "dark",
   className = "",
+  onClick,
 }: {
   text: string;
   type?: "button" | "submit" | "reset" | undefined;
   size?: "lg" | "sm";
   variant?: "dark" | "light" | "yellow";
   className?: string;
+  onClick?: () => void;
 }) => {
   return (
     <button
@@ -27,6 +29,7 @@ const Button = ({
           ? "bg-yellow hover:bg-blue1 hover:text-white text-blue2"
           : ""
       } ${className}`}
+      onClick={onClick}
     >
       {text}
     </button>
